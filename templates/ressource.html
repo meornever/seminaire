@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personne Ressource</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        #retour, .btn-light {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+{% block content %}
+<div class="container mt-5">
+    <!-- Bouton "retour à l'accueil" -->
+    <a href="/" id="retour" class="btn btn-light mb-4">Retour à l'accueil</a>
+
+    <!-- Contenu de la page -->
+    <h1>Le Concept de "Personne Ressource"</h1>
+
+    <h2>Qu'est-ce qu'une "personne ressource" ?</h2>
+    <p>
+        La "personne ressource" est un membre volontaire du groupe qui agit comme un relais entre les intervenants et les participants durant le séminaire. Elle est dédiée à garantir que tous les participants soient à l'aise, informés et engagés.
+    </p>
+
+    <h2>Rôle de la "personne ressource" :</h2>
+    <ul>
+        <li>Liaison avec les intervenants : Assurer une communication fluide entre les participants et les animateurs ou conférenciers.</li>
+        <li>Rattrapage d'information : Si un participant manque une partie de l'atelier ou arrive en retard, la "personne ressource" prendra un moment pour le mettre à jour.</li>
+        <li>Attention aux détails : Elle est attentive aux besoins et aux questions des participants, assurant que personne ne se sente perdu ou dépassé.</li>
+    </ul>
+
+    <h2>Pourquoi devenir une "personne ressource" ?</h2>
+    <p>
+        Devenir une "personne ressource" est l'occasion de jouer un rôle central dans la réussite du séminaire. C'est une opportunité d'aider les autres, d'améliorer vos compétences en communication et de renforcer votre réseau professionnel.
+    </p>
+
+    <h2>Comment se porter volontaire ?</h2>
+    <p>
+        Si vous êtes intéressé à devenir une "personne ressource", veuillez contacter [Nom de la personne/du département responsable]. Nous encourageons tout le monde, quel que soit son niveau ou son expérience, à envisager ce rôle enrichissant.
+    </p>
+
+</div>
+{% endblock %}
+
+</body>
+</html>

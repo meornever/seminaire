@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    .video-content h1, .video-content p, .video-content .btn {
+        color: #ffffff; /* Couleur blanche */
+    }
+</style>
+
+<div class="video-background">
+    <video autoplay loop muted>
+        <source src="{{ url_for('static', filename='videos/votre_video.mp4') }}" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
+</div>
+
+<div class="container mt-5 text-center content video-content">
+    <h1>Bienvenue sur la page du séminaire Naka Conseil</h1>
+
+    <!-- Boutons côte à côte -->
+    <div class="d-inline-block">
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                L'équipe Naka Conseil
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="/module2">Organigramme</a>
+                <a class="dropdown-item" href="/trombinoscope">Trombinoscope</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-inline-block ml-3">
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuRules" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Le séminaire 2023 - 2024
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuRules">
+                <a class="dropdown-item" href="/module1">Règles de vie</a>
+                <a class="dropdown-item" href="/module3">Déroulé du séminaire</a>
+                <a class="dropdown-item" href="/ressource">Personne ressource</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
