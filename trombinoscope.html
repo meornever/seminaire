@@ -1,22 +1,53 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trombinoscope - Intranet Professionnel</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Votre CSS personnalisé -->
+    <link rel="stylesheet" href="./static/css/styles.css">
 
-{% block content %}
+    <style>
+        .person-card {
+            width: 200px;
+            margin: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .person-card img {
+            width: 100%;
+            height: 200px;
+        }
+        
+        .person-card h5, .person-card p {
+            margin: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
 <div class="container mt-5">
-    <!-- Bouton "retour à l'accueil" -->
-    <a href="/" class="btn btn-light mb-4">Retour à l'accueil</a>
-
-    <h1>Trombinoscope</h1>
-    <div class="row">
+    <h1 class="text-center mb-4">Trombinoscope</h1>
+    <div class="d-flex flex-wrap justify-content-center">
         {% for person in persons %}
-        <div class="col-md-3 mb-4">
-            <div class="card">
-                <img src="{{ url_for('static', filename='images/trombinoscope/' + person.image) }}" alt="{{ person.first_name }} {{ person.last_name }}" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">{{ person.first_name }} {{ person.last_name }}</h5>
-                </div>
-            </div>
+        <div class="person-card">
+            <img src="./static/images/{{ person.image }}" alt="{{ person.first_name }} {{ person.last_name }}">
+            <h5>{{ person.first_name }} {{ person.last_name }}</h5>
         </div>
         {% endfor %}
     </div>
 </div>
-{% endblock %}
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./static/js/scripts.js"></script>
+
+</body>
+</html>

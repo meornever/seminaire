@@ -1,66 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personne Ressource</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-
-        #retour, .btn-light {
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-    </style>
+    <title>Personne ressource - Intranet Professionnel</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Votre CSS personnalisé -->
+    <link rel="stylesheet" href="./static/css/styles.css">
 </head>
-
 <body>
 
-{% block content %}
 <div class="container mt-5">
-    <!-- Bouton "retour à l'accueil" -->
-    <a href="/" id="retour" class="btn btn-light mb-4">Retour à l'accueil</a>
-
-    <!-- Contenu de la page -->
-    <h1>Le Concept de "Personne Ressource"</h1>
-
-    <h2>Qu'est-ce qu'une "personne ressource" ?</h2>
+    <h1 class="text-center mb-4">Personne Ressource</h1>
     <p>
-        La "personne ressource" est un membre volontaire du groupe qui agit comme un relais entre les intervenants et les participants durant le séminaire. Elle est dédiée à garantir que tous les participants soient à l'aise, informés et engagés.
+        La personne ressource est là pour répondre à toutes vos questions et vous aider en cas de problème. N'hésitez pas à la solliciter.
     </p>
-
-    <h2>Rôle de la "personne ressource" :</h2>
-    <ul>
-        <li>Liaison avec les intervenants : Assurer une communication fluide entre les participants et les animateurs ou conférenciers.</li>
-        <li>Rattrapage d'information : Si un participant manque une partie de l'atelier ou arrive en retard, la "personne ressource" prendra un moment pour le mettre à jour.</li>
-        <li>Attention aux détails : Elle est attentive aux besoins et aux questions des participants, assurant que personne ne se sente perdu ou dépassé.</li>
-    </ul>
-
-    <h2>Pourquoi devenir une "personne ressource" ?</h2>
-    <p>
-        Devenir une "personne ressource" est l'occasion de jouer un rôle central dans la réussite du séminaire. C'est une opportunité d'aider les autres, d'améliorer vos compétences en communication et de renforcer votre réseau professionnel.
-    </p>
-
-    <h2>Comment se porter volontaire ?</h2>
-    <p>
-        Si vous êtes intéressé à devenir une "personne ressource", veuillez contacter [Nom de la personne/du département responsable]. Nous encourageons tout le monde, quel que soit son niveau ou son expérience, à envisager ce rôle enrichissant.
-    </p>
-
+    <div class="row">
+        <div class="col-4">
+            <img src="./static/images/Romain_GROTTO.jpg" alt="Romain GROTTO" class="img-fluid">
+        </div>
+        <div class="col-8">
+            <h2>Romain GROTTO</h2>
+            <p>Responsable du séminaire</p>
+            <p>Téléphone : 06.35.23.15.12</p>
+            <p>Email : rgrotto@naka-conseil.com</p>
+        </div>
+    </div>
 </div>
-{% endblock %}
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./static/js/scripts.js"></script>
 
 </body>
 </html>
