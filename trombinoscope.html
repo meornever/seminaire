@@ -10,36 +10,187 @@
     
     <!-- Votre CSS personnalisé -->
     <link rel="stylesheet" href="./static/css/styles.css">
-
-    <style>
-        .person-card {
-            width: 200px;
-            margin: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
-        
-        .person-card img {
-            width: 100%;
-            height: 200px;
-        }
-        
-        .person-card h5, .person-card p {
-            margin: 10px 0;
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
 
 <div class="container mt-5">
     <h1 class="text-center mb-4">Trombinoscope</h1>
-    <div class="d-flex flex-wrap justify-content-center">
-        {% for person in persons %}
-        <div class="person-card">
-            <img src="./static/images/{{ person.image }}" alt="{{ person.first_name }} {{ person.last_name }}">
-            <h5>{{ person.first_name }} {{ person.last_name }}</h5>
+
+    <div class="row">
+        <!-- Début des blocs pour chaque personne -->
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Romain_GROTTO.jpg" alt="Romain GROTTO" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Romain GROTTO</h5>
+                </div>
+            </div>
         </div>
-        {% endfor %}
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Justine_SYLLA.jpg" alt="Justine SYLLA" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Justine SYLLA</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Marina_FABRE.jpg" alt="Marina FABRE" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Marina FABRE</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Anaïs_MOREIRA.jpg" alt="Anaïs MOREIRA" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Anaïs MOREIRA</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Axel_JUAN.jpg" alt="Axel JUAN" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Axel JUAN</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Sara_DUVAL.jpg" alt="Sara DUVAL" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Sara DUVAL</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Mathilde_Schneider.jpg" alt="Mathilde Schneider" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Mathilde Schneider</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Manon_DELBOULBES.jpg" alt="Manon DELBOULBES" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Manon DELBOULBES</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Stephanie_BELLAHCENE.jpg" alt="Stephanie BELLAHCENE" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Stephanie BELLAHCENE</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Aurelie_CANDELON.jpg" alt="Aurelie CANDELON" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Aurélie CANDELON</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Beverly_BOUDINAR.jpg" alt="Beverly BOUDINAR" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Beverly BOUDINAR</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Ouarda_ZATOUT.jpg" alt="Ouarda ZATOUT" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Ouarda ZATOUT</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Solene_ROUSSELLE.jpg" alt="Solene ROUSSELLE" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Solene ROUSSELLE</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Emma_CASTELLA.jpg" alt="Emma CASTELLA" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Emma CASTELLA</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Lilian_MENAMENA.jpg" alt="Lilian MENA MENA" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Lilian MENA MENA</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Clara_BREST.jpg" alt="Clara BREST" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Clara BREST</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Alice_MARAL.jpg" alt="Alice MARAL" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Alice MARAL</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Lou_CATHALA.jpg" alt="Lou CATHALA" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Lou CATHALA</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="./static/images/trombinoscope/Thomas_CHMIELINSKI.jpg" alt="Thomas CHMIELINSKI" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Thomas CHMIELINSKI</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fin des blocs pour chaque personne -->
     </div>
 </div>
 
