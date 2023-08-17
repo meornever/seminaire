@@ -13,18 +13,21 @@
 </head>
 <body>
 
-<!-- Bouton d'accueil en haut à droite -->
-<div class="container mt-2">
-    <a href="./accueil.html" class="btn btn-primary float-right">Accueil</a>
+<div class="container mt-3">
+    <div class="d-flex justify-content-end">
+        <a href="./accueil.html" class="btn btn-primary">Accueil</a>
+    </div>
 </div>
 
 <div class="container mt-5">
-    <h1 class="text-center mb-4">Organigramme Naka Conseil - Rentrée 2023 !</h1>
+    <h1 class="text-center mb-4">Organigramme</h1>
 
-    <!-- L'affichage du PDF -->
-    <iframe src="./static/Organigramme.pdf" width="100%" height="600" frameborder="0"></iframe>
-    <p>Envie de conserver le fichier ? <a href="./static/Organigramme.pdf">Cliquez ici pour télécharger le PDF</a>.</p>
+    <!-- Utiliser un iframe pour afficher le PDF -->
+    <iframe src="./static/Organigramme.pdf" style="width:100%;" height="600"></iframe>
 
+    <p class="mt-4">
+        Si le PDF ne s'affiche pas correctement, <a href="./static/Organigramme.pdf" target="_blank">cliquez ici pour le télécharger</a>.
+    </p>
 </div>
 
 <!-- Scripts -->
