@@ -1,3 +1,6 @@
+http://github.com/meornever/seminaire
+
+
 cd C:\Users\Romain Grotto\OneDrive - NAKA\Bureau\GITHub
 git add .
 git commit -m "Mise à jour de la structure des dossiers pour refléter GitHub Pages"
